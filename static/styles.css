@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+nav {
+	padding: 1em;
+}
+
+nav ul {
+	display: flex;
+	gap: 1em;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 1em;
+}
+
+th,
+td {
+	padding: 0.25em 0.5em;
+}
+
+th {
+	text-align: left;
+}

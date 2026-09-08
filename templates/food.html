@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Food - Calories{% endblock %}
+{% block content %}
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Calories</th>
+		</tr>
+			{% for item in data %}
+			<tr>
+				<td>{{ item.id }}</td>
+				<td>{{ item.name }}</td>
+				<td>{{ item.kcal }}</td>
+			</tr>
+			{% endfor %}
+	</table>
+{% endblock %}
